@@ -1,1 +1,25 @@
-<a href="https://api.whatsapp.com/send?phone=967772241602&text=مساعده">Click here to send a WhatsApp message</a>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to WhatsApp</title>
+    <script>
+        // تحديد رقم الهاتف والرسالة
+        var phoneNumber = "9661234567890";
+        var message = "Hello, how are you?";
+        
+        // تشفير الرسالة بتنسيق URL
+        var encodedMessage = encodeURIComponent(message);
+        
+        // إنشاء رابط واتساب
+        var whatsappLink = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+        
+        // توجيه المستخدم تلقائيًا إلى رابط واتساب
+        window.location.href = whatsappLink;
+    </script>
+</head>
+<body>
+    <p>Redirecting to WhatsApp...</p>
+</body>
+</html>
